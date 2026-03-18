@@ -142,7 +142,7 @@ Complete these steps:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   cp .env.example .env
+   cp .env.example .env.secret
    ```
 
 2. To open the `.env` file in `nano`,
@@ -150,7 +150,7 @@ Complete these steps:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   nano .env
+   nano .env.secret
    ```
 
 3. Write an arbitrary value for `QWEN_CODE_API_KEY`.
