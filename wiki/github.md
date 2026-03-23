@@ -109,7 +109,7 @@ Example: `inno-se-toolkit`.
 
 #### `<your-github-username>` placeholder
 
-Your [`GitHub` username](#github-username) (without `@`).
+Your [`GitHub` username](#github-username) (without `@`, `<`, and `>`).
 
 #### Find `<your-github-username>`
 
