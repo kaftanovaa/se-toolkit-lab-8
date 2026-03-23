@@ -20,7 +20,7 @@
   - [1.6. Clone your fork (LOCAL)](#16-clone-your-fork-local)
     - [1.6.1. (UPD) Copy your fork URL](#161-upd-copy-your-fork-url)
     - [1.6.2. (UPD) Clone your fork](#162-upd-clone-your-fork)
-  - [1.7. (UPD) Open the cloned repo and set up `VS Code` (LOCAL)](#17-upd-open-the-cloned-repo-and-set-up-vs-code-local)
+  - [1.7. (UPD) Set up `VS Code` in the lab repository directory (LOCAL)](#17-upd-set-up-vs-code-in-the-lab-repository-directory-local)
   - [1.8. Create a new VM](#18-create-a-new-vm)
   - [1.9. Set up `Python`](#19-set-up-python)
     - [1.9.1. Install `uv` (LOCAL)](#191-install-uv-local)
@@ -190,13 +190,13 @@ See [tools](../../wiki/software-types.md#tool).
 
 1. [Clone your lab repository fork](../../wiki/lab.md#clone-your-lab-repository-fork).
 
-### 1.7. (UPD) Open the cloned repo and set up `VS Code` (LOCAL)
+### 1.7. (UPD) Set up `VS Code` in the lab repository directory (LOCAL)
 
 > [!IMPORTANT]
 > Go by the links in the steps below and complete the checks ("You should see ...").
 > Otherwise, your setup will be broken.
 
-1. [Open in `VS Code` the directory](../../wiki/vs-code.md#open-the-directory):
+1. [Open in `VS Code` the cloned lab repository directory](../../wiki/vs-code.md#open-the-directory):
    `se-toolkit-lab-7`.
 2. [Check the current shell in the `VS Code Terminal`](../../wiki/vs-code.md#check-the-current-shell-in-the-vs-code-terminal).
 3. [Install the recommended `VS Code` extensions](../../wiki/vs-code.md#install-the-recommended-vs-code-extensions).
