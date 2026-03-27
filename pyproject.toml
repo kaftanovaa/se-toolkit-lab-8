@@ -1,5 +1,11 @@
 [tool.uv.workspace]
-members = ["backend", "mcp", "qwen-code-api"]
+members = [
+  "backend",
+  "mcp",
+  "qwen-code-api",
+  # "nanobot-websocket-channel",
+  # "nanobot",
+]
 
 [tool.uv.sources]
 lms-mcp = { workspace = true }
@@ -110,6 +116,7 @@ include = [
   "scripts",
   "mcp",
   "qwen-code-api",
+  # "nanobot-websocket-channel",
 ]
 extraPaths = ["backend", "qwen-code-api"]
 exclude = [
@@ -131,6 +138,11 @@ pythonpath = ["backend"]
 asyncio_mode = "auto"
 
 [tool.ty.src]
-include = ["backend", "mcp", "qwen-code-api"]
+include = [
+  "backend",
+  "mcp",
+  "qwen-code-api",
+  # "nanobot-websocket-channel"
+]
 
 [tool.ty.rules]
