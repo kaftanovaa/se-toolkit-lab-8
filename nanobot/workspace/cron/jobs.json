@@ -1,1 +1,1 @@
-{"version":1,"jobs":[{"id":"health-check-webchat","name":"LMS Health Check","session":"webchat:cron-health","message":"Check for LMS backend errors in the last 2 minutes","every_seconds":120,"enabled":true}]}
+{"version":1,"jobs":[{"id":"autocheck-health","name":"Autocheck Health Check","session":"webchat:autocheck","message":"Check LMS backend health and report if healthy or errors found","every_seconds":120,"enabled":true,"created_at":"2026-03-28T20:25:00Z"}]}

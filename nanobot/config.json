@@ -1,0 +1,64 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "./workspace",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "provider": "custom"
+    }
+  },
+  "providers": {
+    "custom": {
+      "apiKey": "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",
+      "apiBase": "https://openrouter.ai/api/v1",
+      "extraHeaders": {
+        "HTTP-Referer": "http://localhost:42002",
+        "X-Title": "LMS Nanobot"
+      }
+    }
+  },
+  "channels": {
+    "webchat": {
+      "enabled": true,
+      "allowFrom": [
+        "*"
+      ]
+    }
+  },
+  "tools": {
+    "mcpServers": {
+      "lms": {
+        "command": "python",
+        "args": [
+          "-m",
+          "mcp_lms"
+        ],
+        "env": {
+          "NANOBOT_LMS_BACKEND_URL": "http://backend:42002",
+          "NANOBOT_LMS_API_KEY": "lms-secret-key-2026"
+        }
+      },
+      "webchat": {
+        "command": "python",
+        "args": [
+          "-m",
+          "mcp_webchat"
+        ],
+        "env": {
+          "NANOBOT_WEBCCHAT_UI_RELAY_URL": "http://nanobot:8765",
+          "NANOBOT_WEBCCHAT_TOKEN": "nanobot-secret-2026"
+        }
+      },
+      "obs": {
+        "command": "python",
+        "args": [
+          "-m",
+          "mcp_obs"
+        ],
+        "env": {
+          "VICTORIALOGS_URL": "http://victorialogs:9428",
+          "VICTORIATRACES_URL": "http://victoriatraces:10428"
+        }
+      }
+    }
+  }
+}
