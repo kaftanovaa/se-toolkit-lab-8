@@ -1,0 +1,1 @@
+{"version":1,"jobs":[{"id":"health-check-1","name":"LMS Health Check","description":"Check backend errors every 2 minutes","enabled":true,"every_seconds":120,"message":"Check for LMS backend errors in the last 2 minutes. If no errors, say system looks healthy.","session":"webchat:health-check","created_at":"2026-03-28T14:45:00Z"}]}
